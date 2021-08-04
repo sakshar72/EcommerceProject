@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="ecommerce.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="ecommerce.HomePage">
+				<methods>
+					<exclude name="verifyHomePageTitle">
+					</exclude>
+					<exclude name="verifyMobileSubPageTitle">
+					</exclude>
+					<exclude name="searchFunctionality">
+					</exclude>
+				</methods>
+			</class>
+			<!-- <class name="ecommerce.MobileListingPage"> <methods> <include name="applyCouponCode"> 
+				</include> </methods> </class> -->
+			<!-- <class name="ecommerce.XperiaProductDescriptionPage" /> -->
+			<!-- <class name="ecommerce.AccountPage"> <methods> <include name="verifyInvoicePrinted"></include> 
+				</methods> </class> -->
+			<!-- <class name="ecommerce.ProductReviewPage"></class> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
